@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    background-color: #F2F5F7;
+}
+
+nav {
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-img-container {
+    height: 2rem;
+    width: 2rem;
+}
+
+.logo-img-container img {
+    height: 100%;
+    width: 100%;
+}
+
+nav span {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.execute-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 1.5rem;
+}
+
+.search-container {
+    border: 1px solid #DCDCDC;
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+}
+
+.sheet-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #DCDCDC;
+    padding-bottom: 1rem;
+}
+
+.search-container>div>span {
+    font-size: 0.8rem;
+    color: #A5A9AA;
+}
+
+.input-container {
+    padding-top: 1rem;
+}
+
+.input-container>input {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.execute-button {
+    display: flex;
+    width: 100%;
+    gap: 0.6rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: white;
+    background-color: #F5461B;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+}
+
+.hero-section {
+    background-color: white;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.overview-buttons {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    color: #A5A9AA;
+    border-bottom: 1px solid #b9bdbe;
+}
+
+.overview-buttons>span {
+    height: 100%;
+    padding: 0.8rem;
+
+}
+
+.overview-buttons>span:hover {
+    color: #F5461B;
+    border-bottom: 2px solid #F5461B;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.hero-sub-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.query-container {
+    border: 2px solid #DCDCDC;
+    margin: 0 1rem;
+    border-radius: 5px;
+    padding: 0.8rem;
+    position: relative;
+    font-size: 0.8rem;
+    color: #474848;
+}
+
+.query-text {
+    display: inline;
+}
+.query-number {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #909090;
+    color: white;
+    border: 2px solid #FFFFFF;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 50%;
+}
+
+.loader-container {
+    position: absolute;
+    bottom: -18%;
+    right: 3%;
+
+}
+
+.start-loader {
+    background-color: black;
+    padding: 0.5rem;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spin-loader {
+    height: 100%;
+    width: 100%;
+    animation: rotateLoader 2s linear infinite;
+}
+
+.loading-loader {
+    background-color: #F1ECEB;
+    padding: 0.5rem;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.completed-loader {
+    background-color: #EBF1EB;
+    padding: 0.5rem;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@keyframes rotateLoader {
+    from {
+        transform: rotate(0deg);
+        /* Start rotation from 0 degrees */
+    }
+
+    to {
+        transform: rotate(360deg);
+        /* Rotate to 360 degrees */
+    }
+}
